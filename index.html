@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- css slick -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <!-- css perso -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js" defer></script>
+    <!-- jquery bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script type="text/javascript" src="https://gender-api.com/get?name=elizabeth&key=TVfBGnJZMcDRNHshGP"></script>
+    <!-- jQuery min -->
+    <script type="text/javascript" src="js/slick.min.js" defer></script>
+    <!-- jQuery perso -->
+    <script src="js/scripts.js" defer></script>
+
+    <title>Test Front-End</title>
+  </head>
+  <body>
+    <div class="container-fluid" id="wd1_nlpopup">
+      <header>
+        <img
+          class="logo"
+          src="img/logo.png"
+          alt="studio zerance"
+          height="300"
+        />
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul>
+              <li class="nav-item" id="nos-clients">Nos Clients</li>
+              <li class="nav-item" id="notre-offre">Notre Offre</li>
+              <li class="nav-item" id="le-studio">Le studio</li>
+              <li class="nav-item" class="open-button" onclick="openForm()">Contact</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="banner">
+        <p>SINCE 2016</p>
+        <h1 class="banner-i">
+          We create from scratch amazing <strong>Shopify</strong>
+        </h1>
+      </section>
+
+      <section class="portfolio">
+        <h6>Nos clients sont géniaux !</h6>
+        <div class="portfolio-1">
+          <a href="https://yokoshop.com"
+            ><img src="img/yoko.jpg" alt="" href="https://yokoshop.com"
+          /></a>
+          <img src="img/webedia.jpg" alt="" />
+          <img src="img/avnifr.jpg" alt="" />
+          <img src="img/seasonly.jpg" alt="" />
+          <img src="img/joone.png" alt="" />
+        </div>
+        <div class="portfolio-2">
+          <img src="img/yoko.jpg" alt="" />
+          <img src="img/boxtal.jpg" alt="" />
+          <img src="img/fempo.jpg" alt="" />
+          <img src="img/bonsoirs.jpg" alt="" />
+          <img src="img/mars.jpg" alt="" />
+        </div>
+        <div class="portfolio-3">
+          <img src="img/bigfernand.jpg" alt="" />
+          <img src="img/fourche.jpg" alt="" />
+          <img src="img/riviere.jpg" alt="" />
+          <img src="img/cdiscount.jpg" alt="" />
+          <img src="img/tearler.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Slider -->
+      <section class="slider">
+        <div class="slider-photo slick-list">
+          <div class="slider-photo-1">
+            <img src="img/Artboard_1.jpg" alt="" />
+          </div>
+          <div class="slider-photo-2">
+            <img src="img/Artboard_2.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Popup -->
+      <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <div class="contact-head">
+            <h4>Contact</h4>
+            <button
+              type="button"
+              class="cancel fa fa-window-close"
+              onclick="closeForm()"
+            >
+              Fermer
+            </button>
+          </div>
+
+          <label for="name"><b>Prénom</b></label>
+          <input type="text" placeholder="Enter name" name="name" required />
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="message"><b>Message</b></label>
+          <input
+            type="text"
+            placeholder="Enter message"
+            name="message"
+            required
+          />
+
+          <button type="submit" class="btn">Valider</button>
+        </form>
+      </div>
+
+      <footer class="defileParent">
+        <p
+          class="defile"
+          data-text="Good cat Bad cat / Federic Diefental / Quand c'est trop, c'est Tropica / Qu'est ce qui est jaune et ... Good cat Bad cat / Federic Diefental / Quand c'est trop, c'est Tropica / Qu'est ce qui est jaune et ..."
+        >
+          Good cat Bad cat / Federic Diefental / Quand c'est trop, c'est Tropica/ Qu'est ce qui est jaune et ...Good cat Bad cat / Federic Diefental /Quand c'est trop, c'est Tropica / Qu'est ce qui est jaune et ...
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

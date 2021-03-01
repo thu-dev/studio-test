@@ -1,0 +1,246 @@
+.container-fluid {
+	padding: 0;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+   display: flex;
+}
+
+header nav ul li {
+    display: flex;
+    list-style-type: none;
+    font-weight: bold;
+    padding-top:  4vh;
+    padding-right: 5vw;
+}
+
+.logo{
+    position: absolute;
+}
+
+nav {
+	position: absolute;
+	right: -55vw;
+}
+
+.navbar-toggler {
+	position: absolute;
+	top: 2vh;
+	right: -35vw;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    height: 50vh;
+    margin-top: 20vh;
+}
+.banner p {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.banner-i::before {
+    content: "<";
+}
+
+.banner-i::after {
+    content: ">/";
+}
+
+.banner-i strong {
+    background-image : url("https://cdn.shopify.com/s/files/1/0072/0561/7711/files/Calque_14.png?8187");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position : center 100%;
+    overflow: visible;
+}
+
+
+.portfolio {
+    padding: 5rem ;
+    background-color: black;
+    padding: auto;
+    text-align: center;
+}
+
+.portfolio h6 {
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Slider */
+.slider {
+    border: 1px solid red;
+    height: 100vh;
+
+}
+.slider-photo {
+    height: 100vh;
+	position: relative;
+	padding-right: 0px !important;
+}
+
+
+.slick-next:before {
+    content: '\027E9';
+    color: black;
+}
+
+button.slick-next.slick-arrow {
+    right: 25%;
+    font-weight: 900;
+}
+
+.slick-list{padding:0 20% 0 0;}
+
+
+
+/* Texte */
+.defileParent {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 100vw;
+    background-color: yellow;
+}
+.defile {
+	display:block;
+	-webkit-animation:linear marqueelike 20s infinite ;
+	-moz-animation:linear marqueelike 20s infinite ;
+	-o-animation:linear marqueelike 20s infinite ;
+	-ms-animation:linear marqueelike 20s infinite ;
+	animation:linear marqueelike 20s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:25px;
+}
+
+
+.defile:after {
+	content:attr(data-text);
+	position:absolute;
+	white-space:nowrap;
+	padding-left:10px;
+}
+
+@-webkit-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-moz-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-o-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-ms-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+
+@media only screen and (max-width: 860px) {
+.defileParent {
+	display: block;
+	margin: 3em auto;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.defile {
+	display:block;
+	-webkit-animation:linear marqueelike 15s infinite ;
+	-moz-animation:linear marqueelike 15s infinite ;
+	-o-animation:linear marqueelike 15s infinite ;
+	-ms-animation:linear marqueelike 15s infinite ;
+	animation:linear marqueelike 15s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:25px;
+}
+}
+
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 15px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+.cancel {
+	background-color: red;
+	color: white;
+	font-weight: bold;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+	opacity: 1;
+  }	
+
+  .contact-head {
+	  display: flex;
+	  justify-content: space-between;
+	  padding: 0;
+	  margin: 0;
+  }
